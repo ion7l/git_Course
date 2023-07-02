@@ -1,0 +1,117 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) { 
+    .container{
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+.head {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 992px) {
+    .head {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.head .log {
+    color: #5D5D5D;
+}
+.head .log h1 {
+    font-weight: normal;
+}
+.head .log h1 span {
+    font-weight: bold;
+}
+.head .info {
+    display: flex;
+    align-items: center;
+}
+.head .info ul {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+}
+.head .info ul li {
+    padding: 30px;
+}
+.head .info ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #5D5D5D;
+}
+.head .info ul li a:hover {
+    color: #6C63FF;
+}
+.head .info a:not(li a) {
+    padding: 20px 50px;
+    background-color: #6C63FF;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 50px;
+}
+.contect {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 992px) {
+    .contect {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+.contect .text {
+    color: #5D5D5D;
+    text-align: center;
+}
+.contect .text p:first-of-type {
+    font-size: 70px;
+    font-weight: bold;
+    max-width: 700px;
+}
+.contect .text p:last-of-type {
+    font-size: 25px ;
+    line-height: 2;
+    max-width: 710px;
+    margin-bottom: 60px;
+}
+.contect .text a {
+    padding: 20px 50px;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #6C63FF;
+    color: white;
+    border-radius: 50px;
+}
+.contect img {
+    height: 600px;
+    align-self: center;
+}
+@media (max-width: 992px) {
+    .contect img {
+        order: -1;
+        height: 400px;
+    }
+}
